@@ -1,0 +1,79 @@
+*{
+	font-family: georgia;
+}
+header, footer{
+	text-align: center;
+}
+body{
+	background: url(../images/main.jpg) fixed;
+	background-size: cover;
+	color: white;
+
+}
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 200%;
+	padding: 20px;
+}
+nav{
+	text-align: center;
+}
+#wrapper *{
+}
+#wrapper{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(7, 250px);
+	grid-gap: 25px;
+	grid-template-areas: 
+	"header header header"
+	"nav nav nav"
+	"section1 section1 aside"
+	"section2 section2 aside"
+	"section3 section3 aside"
+	"section4 section4 aside"
+	"footer footer footer"
+}
+header{
+	grid-area: header;
+}
+nav{
+	grid-area: nav;
+}
+#section1{
+	grid-area: section1;
+}
+#section2{
+	grid-area: section2;
+}
+#section3{
+	grid-area: section3;
+}
+#section4{
+	grid-area: section4;
+}
+aside{
+	grid-area: aside;
+}
+footer{
+	grid-area: footer;
+}
+img{
+	width: 300px;
+	height: 200px;
+	padding: 10px;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+section{
+	background-color: white;
+	color: black;
+}
+.justifyRight{
+	text-align: right;
+}
